@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.TextFlow?>
 
-<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="WikiMessage" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1">
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="WikiMessage" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <content>
       <BorderPane prefHeight="200.0" prefWidth="200.0">
-         <bottom>
-            <DialogPane BorderPane.alignment="CENTER" />
-         </bottom>
          <center>
-            <TextFlow prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            <TextFlow id="chatDisplay" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
          </center>
+         <bottom>
+            <TextField BorderPane.alignment="CENTER" />
+         </bottom>
       </BorderPane>
    </content>
 </TitledPane>
