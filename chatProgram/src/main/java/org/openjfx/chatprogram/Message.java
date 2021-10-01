@@ -10,5 +10,8 @@ package org.openjfx.chatprogram;
  * @author danie
  */
 public class Message {
-    
+    int ID_message;
+    String message;
+    String sender;
+    int Chatroom_ID;
 }

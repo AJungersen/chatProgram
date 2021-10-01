@@ -10,5 +10,6 @@ package org.openjfx.chatprogram;
  * @author danie
  */
 public class User {
-    
+    String userName;
+    String passWord;
 }

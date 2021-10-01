@@ -10,5 +10,6 @@ package org.openjfx.chatprogram;
  * @author danie
  */
 public class ChatUser {
-    
+    String User_name;
+    int Chatroom_ID;
 }
