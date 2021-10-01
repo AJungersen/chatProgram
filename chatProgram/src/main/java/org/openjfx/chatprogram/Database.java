@@ -10,5 +10,6 @@ package org.openjfx.chatprogram;
  * @author danie
  */
 public class Database {
-    
+   private final String connectionString = "jdbc:sqlite:src/Database.db";
+   
 }
