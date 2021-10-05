@@ -11,8 +11,11 @@ package org.openjfx.chatprogram;
  */
 public class Crypt {
     private void encrypt(String code){
+      String[] chars = new String[15];
       int codeLength = code.length();
-      
-    }
+      for(int i = 0; i < codeLength; i++){
+          chars[i] = code[i];
+          
+      }
     }
 }

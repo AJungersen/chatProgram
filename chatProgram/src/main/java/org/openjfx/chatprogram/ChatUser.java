@@ -12,4 +12,8 @@ package org.openjfx.chatprogram;
 public class ChatUser {
     String User_name;
     int Chatroom_ID;
+    ChatUser(String U_name, int C_ID){
+        User_name = U_name;
+        Chatroom_ID = C_ID;
+    }
 }

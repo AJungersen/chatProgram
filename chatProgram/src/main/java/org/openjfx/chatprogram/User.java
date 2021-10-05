@@ -12,4 +12,8 @@ package org.openjfx.chatprogram;
 public class User {
     String userName;
     String passWord;
+    User(String uName, String pWord){
+      userName = uName;
+      passWord = pWord;
+    }
 }
