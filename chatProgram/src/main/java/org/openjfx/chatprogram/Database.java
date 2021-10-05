@@ -173,4 +173,100 @@ public class Database {
     
         return allmessages;
     }
+    
+    public void saveUser(User x) throws SQLException, Exception 
+    {
+        Connection conn = null;
+        Class.forName("org.sqlite.JDBC");
+        
+        //Skab forbindelse til databasen...
+        try {          
+          conn = DriverManager.getConnection(connectionString);
+        } 
+        catch ( SQLException e ) {
+          //Skrive fejlhåndtering her
+        }
+        
+        String sql = "INSERT INTO Users(Username, Password) VALUES('" + x.userName + "', '" + x.passWord + "')";
+ 
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            //pstmt.setString(1, name);
+            //pstmt.setDouble(2, capacity);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }        
+    }
+    
+    public void savemessage(Message x) throws SQLException, Exception 
+    {
+        Connection conn = null;
+        Class.forName("org.sqlite.JDBC");
+        
+        //Skab forbindelse til databasen...
+        try {          
+          conn = DriverManager.getConnection(connectionString);
+        } 
+        catch ( SQLException e ) {
+          //Skrive fejlhåndtering her
+        }
+        
+        String sql = "INSERT INTO Messages(ID_message, message, sender_ID, C_ID) VALUES('" + x.ID_message + "', '" + x.message + "', '" + x.sender + "','" + x.Chatroom_ID + "')";
+ 
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            //pstmt.setString(1, name);
+            //pstmt.setDouble(2, capacity);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }        
+    }
+    
+    public void savechatRoom(ChatRoom x) throws SQLException, Exception 
+    {
+        Connection conn = null;
+        Class.forName("org.sqlite.JDBC");
+        
+        //Skab forbindelse til databasen...
+        try {          
+          conn = DriverManager.getConnection(connectionString);
+        } 
+        catch ( SQLException e ) {
+          //Skrive fejlhåndtering her
+        }
+        
+        String sql = "INSERT INTO chatRoom(ID_chatroom, Navn) VALUES('" + x.ID_chatroom + "', '" + x.chatName + "')";
+ 
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            //pstmt.setString(1, name);
+            //pstmt.setDouble(2, capacity);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }        
+    }
+    
+    public void saveChatUser(ChatUser x) throws SQLException, Exception 
+    {
+        Connection conn = null;
+        Class.forName("org.sqlite.JDBC");
+        
+        //Skab forbindelse til databasen...
+        try {          
+          conn = DriverManager.getConnection(connectionString);
+        } 
+        catch ( SQLException e ) {
+          //Skrive fejlhåndtering her
+        }
+        
+        String sql = "INSERT INTO chatUser(Users_name, C_ID) VALUES('" + x.User_name + "', '" + x.Chatroom_ID + "')";
+ 
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            //pstmt.setString(1, name);
+            //pstmt.setDouble(2, capacity);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }        
+    }
 }
