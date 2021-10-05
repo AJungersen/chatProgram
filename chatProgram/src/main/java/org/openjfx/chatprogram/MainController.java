@@ -1,3 +1,4 @@
+
 package org.openjfx.chatprogram;
 
 import java.io.IOException;
@@ -30,6 +31,7 @@ public void textFieldEnter(KeyEvent e){
     }
 
 } 
+
 
 
 }

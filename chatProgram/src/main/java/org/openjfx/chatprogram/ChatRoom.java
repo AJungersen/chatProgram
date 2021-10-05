@@ -12,4 +12,9 @@ package org.openjfx.chatprogram;
 public class ChatRoom {
     int ID_chatroom;
     String chatName;
+
+    public ChatRoom(int ID, String cName) {
+        ID_chatroom = ID;
+        chatName = cName;
+    }
 }

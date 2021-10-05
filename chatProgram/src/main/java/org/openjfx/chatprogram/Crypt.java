@@ -9,11 +9,13 @@ package org.openjfx.chatprogram;
  *
  * @author danie
  */
-public class User {
-    String userName;
-    String passWord;
-    User(String uName, String pWord){
-      userName = uName;
-      passWord = pWord;
+public class Crypt {
+    private void encrypt(String code){
+      String[] chars = new String[15];
+      int codeLength = code.length();
+      for(int i = 0; i < codeLength; i++){
+          chars[i] = code[i];
+          
+      }
     }
 }
