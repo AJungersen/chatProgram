@@ -5,14 +5,14 @@
  */
 package org.openjfx.chatprogram;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author danie
  */
-public class Database {
-   private final String connectionString = "jdbc:sqlite:src/Database.db";
-   
-   
+public class Crypt {
+    private void encrypt(String code){
+      int codeLength = code.length();
+      
+    }
+    }
 }
