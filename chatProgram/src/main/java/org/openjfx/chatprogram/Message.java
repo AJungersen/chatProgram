@@ -14,4 +14,10 @@ public class Message {
     String message;
     String sender;
     int Chatroom_ID;
+    Message(int ID_m, String mes, String send, int C_ID){
+        ID_message = ID_m;
+        message = mes;
+        sender = send;
+        Chatroom_ID = C_ID;
+    }
 }
