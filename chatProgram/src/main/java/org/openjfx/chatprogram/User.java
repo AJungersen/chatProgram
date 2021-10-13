@@ -16,4 +16,9 @@ public class User {
       userName = uName;
       passWord = pWord;
     }
+    
+    void myFunction()
+    {
+    
+    }
 }
