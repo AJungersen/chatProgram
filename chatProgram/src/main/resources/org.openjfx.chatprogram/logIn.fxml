@@ -42,7 +42,7 @@
                   <Font name="Ebrima" size="20.0" />
                </font>
             </Label>
-            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="100.0" styleClass="sidebar" text="Monke" textFill="#121212">
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="100.0" styleClass="sidebar" stylesheets="@Styles.css" text="Monke" textFill="#121212">
                <font>
                   <Font name="Berlin Sans FB" size="34.0" />
                </font>
@@ -56,7 +56,7 @@
                   <Font size="14.0" />
                </font>
             </PasswordField>
-            <TextField fx:id="username" layoutX="52.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #489F81; -fx-border-width: 0px 0px 2px 0px;">
+            <TextField fx:id="username" layoutX="52.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #489F81; -fx-border-width: 0px 0px 2px 0px;" stylesheets="@Styles.css">
                <font>
                   <Font size="14.0" />
                </font>
@@ -88,7 +88,7 @@
                   <Font name="Ebrima Bold" size="15.0" />
                </font>
             </Label>
-            <Button layoutX="52.0" layoutY="425.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@../org/openjfx/chatprogram/Styles.css" text="Login">
+            <Button layoutX="52.0" layoutY="425.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@Styles.css" text="Login">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -113,7 +113,7 @@
                   <Font name="Ebrima Bold" size="13.0" />
                </font>
             </Label>
-            <Label fx:id="exitBtn" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#app_exit" prefHeight="25.0" prefWidth="15.0" styleClass="exitBtn" text="X">
+            <Label fx:id="exitBtn" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#app_exit" prefHeight="25.0" prefWidth="15.0" styleClass="exitBtn" stylesheets="@Styles.css" text="X">
                <font>
                   <Font name="Dubai Bold" size="20.0" />
                </font>

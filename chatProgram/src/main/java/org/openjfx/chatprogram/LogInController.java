@@ -7,11 +7,13 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.fxml.Initializable;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.event.ActionEvent;
 
-public class LogInController {
+public class LogInController implements Initializable {
 
     @FXML
     private PasswordField password;
@@ -22,18 +24,26 @@ public class LogInController {
     @FXML
     private Label exitBtn;
     
-    @FXML
-    private void switchToMain() throws IOException {
-        App.setRoot("main");
+    @Override 
+    public void initialize(URL url, ResourceBundle rb){
+        //TODO
     }
-    
+        
     @FXML
-    private void switchToSignUp (MouseEvent event) {
+    private void switchToSignUp (MouseEvent event) throws IOException  {
+        App.setRoot("/org.openjfx.chatprogram/signUp");
     }
 
     @FXML
     private void app_exit(MouseEvent event) {
         System.exit(0);
+    }
+    
+    @FXML
+    public void login(ActionEvent event) throws IOException, Exception {
+        //if(database login && .getText == true){
+        //App.setRoote("Main");
+        //}
     }
     
     
