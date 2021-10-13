@@ -36,7 +36,7 @@ public class LogInController {
         System.exit(0);
     }
     
-    private void login() throws IOException{
+    public void login() throws IOException{
         Crypt crypter = new Crypt();
         String uName;
         String pWord;
