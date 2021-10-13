@@ -18,7 +18,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        System.out.println(App.class.getResource("/org.openjfx.chatprogram/logIn" + ".fxml"));
+        scene = new Scene(loadFXML("/org.openjfx.chatprogram/logIn"), 640, 480);
         stage.setScene(scene);
         stage.show();
     }
