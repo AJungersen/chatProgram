@@ -20,7 +20,7 @@ public class Crypt {
     public Crypt() {
     }
     
-    void encrypt(String code){
+    String encrypt(String code){
       int encryptedNumb = 1;
       int codeLength = code.length();
       for(int i = 0; i < codeLength; i++){
@@ -28,6 +28,7 @@ public class Crypt {
           encryptedNumb = encryptedNumb * (int) Math.pow(primes[i],t);
       }
         System.out.println(encryptedNumb);
+        return String.valueOf(encryptedNumb);
         
     }
     
