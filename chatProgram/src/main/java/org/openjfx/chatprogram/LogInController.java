@@ -36,5 +36,18 @@ public class LogInController {
         System.exit(0);
     }
     
+    private void login(){
+        Crypt crypter = new Crypt();
+        String uName;
+        String pWord;
+        uName = username.getText();
+        pWord = crypter.encrypt(password.getText());
+        for(int i=0; i < App.users.size(); i++){
+            if(uName == App.users.get(i).userName && pWord == App.users.get(i).passWord){ //tjek om de er ens
+                //Brugeren er godkendt kode til at sende brugeren videre CLARA/ADAM
+            }
+        }
+    }
     
+    //TODO private void createUser()
 }

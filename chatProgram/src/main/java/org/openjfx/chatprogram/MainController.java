@@ -25,9 +25,6 @@ public void textFieldEnter(KeyEvent e){
         //System.out.println(chatBarInput);
        System.out.println(secondaryTextField.getText());
 
-    } 
-    else {
-
     }
 
 } 

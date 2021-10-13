@@ -94,7 +94,7 @@ public class Database {
         return allchatRooms;
     }
    
-    public ArrayList<ChatUser> getchatUsers() throws SQLException, Exception {
+    public ArrayList<ChatUser> getAllchatUsers() throws SQLException, Exception {
         
         ArrayList<ChatUser> allchatUsers = new ArrayList<>();
         

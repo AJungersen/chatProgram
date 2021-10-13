@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
@@ -15,8 +16,16 @@ import java.util.ArrayList;
 public class App extends Application {
 
     private static Scene scene;
+    //public static User U = new User("","");
+    public static Database db = new Database();
+    public static  ArrayList<User> users = new ArrayList<User>();
+    public static  ArrayList<ChatRoom> chatrooms = new ArrayList<ChatRoom>();
+    public static  ArrayList<Message> messages = new ArrayList<Message>();
+    public static  ArrayList<ChatUser> chatUsers = new ArrayList<ChatUser>();
+    
 
-    @Override
+
+    //@Override;
     public void start(Stage stage) throws IOException {
         System.out.println(App.class.getResource("/org.openjfx.chatprogram/logIn" + ".fxml"));
         scene = new Scene(loadFXML("/org.openjfx.chatprogram/logIn"), 640, 480);
@@ -35,15 +44,14 @@ public class App extends Application {
     
     
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         launch();
+        Database db = new Database();
+        App.users = db.getAllUsers();
+        App.chatrooms = db.getAllchatRooms();
+        App.messages = db.getAllmessages();
+        App.chatUsers = db.getAllchatUsers();
         System.out.println("Hello world igen");
-        ArrayList<User> users = new ArrayList();
-        ArrayList<ChatRoom> chatrooms = new ArrayList();
-        ArrayList<Message> messages = new ArrayList();
-        ArrayList<ChatUser> chatUsers = new ArrayList();
-        Crypt crypter = new Crypt();
-        crypter.encrypt("hej");
     }
 
 }
