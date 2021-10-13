@@ -88,7 +88,7 @@
                   <Font name="Ebrima Bold" size="15.0" />
                </font>
             </Label>
-            <Button layoutX="52.0" layoutY="425.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@../org/openjfx/chatprogram/Styles.css" text="Login">
+            <Button layoutX="52.0" layoutY="425.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#login" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@../org/openjfx/chatprogram/Styles.css" text="Login">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
