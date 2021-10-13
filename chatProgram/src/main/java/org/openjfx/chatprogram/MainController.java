@@ -9,7 +9,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.text.TextFlow;
 
-public class SecondaryController {
+public class MainController {
 @FXML TextField chatBar;
 @FXML TextField secondaryTextField;
 @FXML TextFlow chatDisplay;
