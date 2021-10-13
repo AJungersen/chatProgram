@@ -62,3 +62,11 @@ and open the template in the editor.
     -fx-underline: true;
 }
 
+.mainBackground {
+    -fx-background-color: white;
+
+}
+.mainTopBar {
+    -fx-background-color: #46A41F;
+}
+

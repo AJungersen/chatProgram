@@ -8,6 +8,7 @@ package org.openjfx.chatprogram;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
+import java.io.IOException;
 
 /**
  * FXML Controller class
@@ -23,5 +24,10 @@ public class SignUpController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    //@FXML 
+    public void switchToLogIn() throws IOException {
+        App.setRoot("logIn");
+    }
     
 }
