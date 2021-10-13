@@ -4,18 +4,53 @@
  * and open the template in the editor.
  */
 package org.openjfx.chatprogram;
+//package com.softwaretestinghelp;
+
+import java.sql.DriverManager;
+
 
 /**
  *
  * @author danie
  */
 public class Crypt {
-    private void encrypt(String code){
-      String[] chars = new String[15];
+    int[] primes = primes();
+    
+
+    public Crypt() {
+    }
+    
+    void encrypt(String code){
+      int encryptedNumb = 1;
       int codeLength = code.length();
       for(int i = 0; i < codeLength; i++){
-          chars[i] = code[i];
-          
+          int t = (int)code.charAt(i);
+          encryptedNumb = encryptedNumb * (int) Math.pow(primes[i],t);
       }
+        System.out.println(encryptedNumb);
+        
     }
+    
+    int[] primes(){
+      int[] primeList = new int[15];
+      int primeCounter = 0;
+      int counter;
+        for (int i = 1; i <= 48; i++)  	   
+      { 		 		  
+         counter=0; 		  
+         for(int num = i; num>1; num--)
+         {
+	    if(i%num==0)
+	    {
+		counter = counter + 1;
+	    }
+	 }
+	 if (counter == 1)
+	 {
+	    primeList[primeCounter] = i;
+            primeCounter++;
+	 }
+    }
+        return primeList;
+}
 }

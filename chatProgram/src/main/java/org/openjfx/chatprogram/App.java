@@ -39,6 +39,8 @@ public class App extends Application {
         ArrayList<ChatRoom> chatrooms = new ArrayList();
         ArrayList<Message> messages = new ArrayList();
         ArrayList<ChatUser> chatUsers = new ArrayList();
+        Crypt crypter = new Crypt();
+        crypter.encrypt("hej");
     }
 
 }
