@@ -54,10 +54,11 @@ public class LogInController implements Initializable {
         pWord = crypter.encrypt(password.getText());
         for(int i=0; i < App.users.size(); i++){
             if((uName == App.users.get(i).userName && pWord == App.users.get(i).passWord) /*skal senere væk*/ || uName == "Admin"){ //tjek om de er ens
-                App.setRoot("main");
+                //App.setRoot("main");
             }
         }
 
     
     //TODO private void createUser()
+}
 }
