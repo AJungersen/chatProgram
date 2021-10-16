@@ -42,7 +42,7 @@ public class LogInController implements Initializable {
     @FXML
     public void login(ActionEvent event) throws IOException, Exception {
         //if(database login && .getText == true){
-        //App.setRoote("Main");
+        App.setRoot("main");
         //}
     }
     @FXML
@@ -60,4 +60,5 @@ public class LogInController implements Initializable {
 
     
     //TODO private void createUser()
+}
 }
