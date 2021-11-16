@@ -1,4 +1,4 @@
-/*
+x/*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
@@ -9,6 +9,12 @@ and open the template in the editor.
 */
 .parent{
     -fx-background-color: white;
+}
+
+.informationbar{
+    -fx-background-color: transparent;
+    -fx-border-color:#46A41F;
+    -fx-border-width:  0px 0px 2px 0px;
 }
 
 .sidebar{
